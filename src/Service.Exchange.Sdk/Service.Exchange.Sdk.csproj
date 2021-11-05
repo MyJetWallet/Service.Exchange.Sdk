@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackageProjectUrl>https://github.com/MyJetWallet/Service.Exchange.Sdk</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/MyJetWallet/Service.Exchange.Sdk</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
