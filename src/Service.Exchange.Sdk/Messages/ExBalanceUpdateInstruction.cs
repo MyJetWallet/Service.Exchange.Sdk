@@ -8,8 +8,8 @@ namespace Service.Exchange.Sdk.Messages
     public class ExBalanceUpdateInstruction
     {
         [DataMember(Order = 1)] public string OperationId { get; set; }
-        [DataMember(Order = 2)] public List<BalanceUpdate> Updates { get; set; }
-        [DataMember(Order = 3)] public DateTime Timestamp { get; set; }
+        [DataMember(Order = 2)] public DateTime Timestamp { get; set; }
+        [DataMember(Order = 3)] public List<BalanceUpdate> Updates { get; set; }
 
         [DataContract]
         public class BalanceUpdate
@@ -18,6 +18,7 @@ namespace Service.Exchange.Sdk.Messages
             [DataMember(Order = 2)] public string WalletId { get; set; }
             [DataMember(Order = 3)] public string AssetId { get; set; }
             [DataMember(Order = 4)] public decimal Amount { get; set; }
+            [DataMember(Order = 5)] public decimal ReserveAmount { get; set; }
         }
     }
 }
