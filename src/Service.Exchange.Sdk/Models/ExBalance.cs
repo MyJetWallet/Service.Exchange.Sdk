@@ -11,5 +11,12 @@ namespace Service.Exchange.Sdk.Models
         [DataMember(Order = 3)] public decimal Balance { get; set; }
         [DataMember(Order = 4)] public decimal ReserveBalance { get; set; }
         [DataMember(Order = 5)] public DateTime LastUpdate { get; set; }
+
+        public string WalletIdAssetId
+        {
+            get => $"{WalletId}::{AssetId}";
+            // ReSharper disable once ValueParameterNotUsed
+            set { }
+        }
     }
 }
