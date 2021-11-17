@@ -11,9 +11,10 @@ namespace Service.Exchange.Sdk.Messages
         [DataMember(Order = 1)] public string OperationId { get; set; }
         [DataMember(Order = 2)] public string Instance { get; set; }
         [DataMember(Order = 3)] public DateTime Timestamp { get; set; }
-        [DataMember(Order = 4)] public BalanceUpdateResult Result { get; set; }
-        [DataMember(Order = 5)] public List<Update> Updates { get; set; }
-        [DataMember(Order = 6)] public List<ExBalance> Balances { get; set; }
+        [DataMember(Order = 4)] public string EventType { get; set; }
+        [DataMember(Order = 5)] public BalanceUpdateResult Result { get; set; }
+        [DataMember(Order = 6)] public List<Update> Updates { get; set; }
+        [DataMember(Order = 7)] public List<ExBalance> Balances { get; set; }
         
         [DataContract]
         public class Update

@@ -9,7 +9,8 @@ namespace Service.Exchange.Sdk.Messages
     {
         [DataMember(Order = 1)] public string OperationId { get; set; }
         [DataMember(Order = 2)] public DateTime Timestamp { get; set; }
-        [DataMember(Order = 3)] public List<BalanceUpdate> Updates { get; set; }
+        [DataMember(Order = 3)] public string EventType { get; set; }
+        [DataMember(Order = 4)] public List<BalanceUpdate> Updates { get; set; }
 
         [DataContract]
         public class BalanceUpdate
