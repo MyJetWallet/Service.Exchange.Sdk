@@ -40,7 +40,8 @@ namespace Service.Exchange.Sdk.Messages
             Unknown = 0,
             Ok = 1,
             Failed = 2,
-            LowBalance = 3
+            LowBalance = 3,
+            LowReserveBalance = 4
         }
     }
 }
