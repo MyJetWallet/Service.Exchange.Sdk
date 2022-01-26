@@ -20,6 +20,8 @@ namespace Service.Exchange.Sdk.Messages
             [DataMember(Order = 3)] public string AssetId { get; set; }
             [DataMember(Order = 4)] public decimal Amount { get; set; }
             [DataMember(Order = 5)] public decimal ReserveAmount { get; set; }
+            [DataMember(Order = 6)] public decimal ReserveFuturesPositions { get; set; }
+            [DataMember(Order = 7)] public decimal ReserveFuturesOrders { get; set; }
         }
     }
 }

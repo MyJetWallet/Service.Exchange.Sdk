@@ -14,6 +14,8 @@ namespace Service.Exchange.Sdk.Models
         [DataMember(Order = 4)] public decimal ReserveBalance { get; set; }
         [DataMember(Order = 5)] public DateTime LastUpdate { get; set; }
         [DataMember(Order = 6)] public long Version { get; set; }
+        [DataMember(Order = 7)] public decimal ReserveFuturesPositions  { get; set; }
+        [DataMember(Order = 8)] public decimal ReserveFuturesOrders  { get; set; }
 
         public string WalletIdAssetId
         {

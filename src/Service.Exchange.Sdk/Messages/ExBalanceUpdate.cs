@@ -32,6 +32,13 @@ namespace Service.Exchange.Sdk.Messages
             
             [DataMember(Order = 10)] public BalanceUpdateResult Result { get; set; }
             [DataMember(Order = 11)] public string ErrorMessage { get; set; }
+            
+            [DataMember(Order = 12)] public decimal ReserveFuturesPositions  { get; set; }
+            [DataMember(Order = 13)] public decimal ReserveNewFuturesPositions  { get; set; }
+            [DataMember(Order = 14)] public decimal ReserveOldFuturesPositions { get; set; }
+            [DataMember(Order = 15)] public decimal ReserveFuturesOrders  { get; set; }
+            [DataMember(Order = 16)] public decimal ReserveNewFuturesOrders  { get; set; }
+            [DataMember(Order = 17)] public decimal ReserveOldFuturesOrders { get; set; }
         }
 
         [DataContract]
